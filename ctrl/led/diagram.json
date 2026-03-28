@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "author": "roselander",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-esp32-devkit-v1",
+      "id": "esp",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel-canvas",
+      "id": "leds",
+      "top": 250,
+      "left": -100,
+      "attrs": {
+        "rows": "1",
+        "cols": "60",
+        "pixelate": "circle"
+      }
+    }
+  ],
+  "connections": [
+    ["esp:D5", "leds:DIN", "green", ["v0.3"]]
+  ],
+  "dependencies": {}
+}
